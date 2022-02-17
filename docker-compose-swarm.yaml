@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+    web:
+        image: shekeriev/bgapp-web
+        deploy:
+            replicas: 5
+        ports:
+            - 8080:80
+        volumes:
+            - "${PROJECT_ROOT}:/var/www/html:ro"
+        networks:
+            - app-network
+    db:
+        image: shekeriev/bgapp-db
+        networks:
+            - app-network
+        environment:
+            MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
+networks:
+    app-network:
