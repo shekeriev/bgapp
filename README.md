@@ -6,7 +6,7 @@ Used mostly for demonstration in various courses and presentations.
 
 Contains the following set of files:
 
-```
+```text
 .
 ├── db                        ---> database image files
 |   └── db_setup.sql          ---> database seed file

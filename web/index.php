@@ -16,7 +16,7 @@
         <tr>
           <td>Население</td>
           <td></td>
-          <td>7 101 859</td>
+          <td>6 838 937</td>
         </tr>
         <tr>
           <td>Столица</td>
@@ -51,6 +51,8 @@
    }
 ?>
       </table>
+
+      <?php print "<br /><br /><br /><small>Processed by <b>".gethostname()."</b> on ".date('Y-m-d-H-i-s')."</small>\n"; ?>
     </div>
   </body>
 </html>
